@@ -30,13 +30,8 @@ function capital(capitals) {
 ```
 
 ##Education
-1. Belarusian State University of Informatics and Radioelectronics
-   Dates Attended: 2010 - 2011
-   Master’s Degree, Hardware, software and technical information security
-   Grade
-2. Belarusian State University of Informatics and Radioelectronics
-   Dates Attended: 2002 – 2007
-   Bachelor’s Degree, Electronic Systems
+* Belarusian State University of Informatics and Radioelectronics Dates Attended: 2010 - 2011 Master’s Degree, Hardware, software and technical information security Grade
+* Belarusian State University of Informatics and Radioelectronics Dates Attended: 2002 – 2007 Bachelor’s Degree, Electronic Systems
 
 #English level
 Upper Intermediate
