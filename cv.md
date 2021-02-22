@@ -12,6 +12,7 @@ I have a technical experience in:
 * The Linux system software development and optimization
 * Cryptography and data protection
 * QT Framework
+* Good experience in PostgreSQL database
 * Good knowledge of languages: C++, PHP, SQL, Bash
 
 #Code example
