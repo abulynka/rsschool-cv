@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <div class="main">
+
+    <div class="box">
+      <div class="header-1">
+        Alexander Bulynka
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="header-2">
+        Contacts
+      </div>
+      <div class="desc">
+        Email: abulynka@gmail.com
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="header-2">
+        Shortly about myself
+      </div>
+      <div class="desc">
+        I like to solve business and computer problems
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="header-2">
+        Programming Languages and capabilities
+      </div>
+      <div class="desc">
+        <div class="list-header">I have a technical experience in</div>
+        <div class="list">* The Linux system software development and optimization</div>
+        <div class="list">* Cryptography and data protection</div>
+        <div class="list">* QT Framework</div>
+        <div class="list">* Good experience in PostgreSQL database</div>
+        <div class="list">* Good knowledge of languages: C++, PHP, SQL, Bash</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="header-2">
+        Code example
+      </div>
+      <pre>
+        <code>
+function capital(capitals) {
+  return capitals.map(
+    (a) => {
+      return 'The capital of '
+        + (a.hasOwnProperty('country') ? a['country'] : '')
+        + (a.hasOwnProperty('state') ? a['state'] : '')
+        + ' is ' + a['capital'];
+    }
+  );
+}
+        </code>
+      </pre>
+    </div>
+
+    <div class="box">
+      <div class="header-2">Education</div>
+      <div class="desc">
+        <div class="list">* Belarusian State University of Informatics and Radioelectronics Dates Attended: 2010 - 2011 Master’s Degree, Hardware, software and technical information security Grade</div>
+        <div class="list">* Belarusian State University of Informatics and Radioelectronics Dates Attended: 2002 – 2007 Bachelor’s Degree, Electronic Systems</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="header-2">English level</div>
+      <div class="desc">Upper Intermediate</div>
+    </div>
+
+  </div>
+</body>
+</html>
+<style>
+  .main {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .box {
+    padding: 10px 0;
+  }
+
+  .header-1 {
+    position: relative;
+    font-size: larger;
+    text-align: center;
+  }
+
+  .header-2 {
+    position: relative;
+    font-size: large;
+  }
+
+  .desc {
+    font-size: small;
+  }
+
+  .list {
+    padding-left: 5px;
+  }
+
+  pre {
+    margin: 0;
+  }
+
+  pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 0 20px;
+  }
+</style>
