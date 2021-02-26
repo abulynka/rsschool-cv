@@ -1,12 +1,12 @@
-##Alexander Bulynka
+## Alexander Bulynka
 
-##Contacts
+## Contacts
 Email: abulynka@gmail.com
 
-#Shortly about myself
+# Shortly about myself
 I like to solve business and computer problems.
 
-#Programming Languages and capabilities
+# Programming Languages and capabilities
 
 I have a technical experience in:
 * The Linux system software development and optimization
@@ -15,7 +15,7 @@ I have a technical experience in:
 * Good experience in PostgreSQL database
 * Good knowledge of languages: C++, PHP, SQL, Bash
 
-#Code example
+# Code example
 ```js
 function capital(capitals) {
     return capitals.map(
@@ -29,9 +29,9 @@ function capital(capitals) {
 }
 ```
 
-##Education
+## Education
 * Belarusian State University of Informatics and Radioelectronics Dates Attended: 2010 - 2011 Master’s Degree, Hardware, software and technical information security Grade
 * Belarusian State University of Informatics and Radioelectronics Dates Attended: 2002 – 2007 Bachelor’s Degree, Electronic Systems
 
-#English level
+# English level
 Upper Intermediate
