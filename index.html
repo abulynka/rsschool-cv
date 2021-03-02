@@ -3,35 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <style>
+    .main {
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .box {
+      padding: 10px 0;
+    }
+
+    .header-1 {
+      position: relative;
+      font-size: larger;
+      text-align: center;
+    }
+
+    .header-2 {
+      position: relative;
+      font-size: large;
+    }
+
+    .desc {
+      font-size: small;
+    }
+
+    .list {
+      padding-left: 5px;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    pre code {
+      display: block;
+      padding: 0 20px;
+      background-color: #eee;
+      border: 1px solid #999;
+    }
+  </style>
 </head>
 <body>
-  <div class="main">
+  <article class="main">
 
-    <div class="box">
+    <section class="box">
       <div class="header-1">
         Alexander Bulynka
       </div>
-    </div>
+    </section>
 
-    <div class="box">
+    <section class="box">
       <div class="header-2">
         Contacts
       </div>
       <div class="desc">
         Email: abulynka@gmail.com
       </div>
-    </div>
+    </section>
 
-    <div class="box">
+    <section class="box">
       <div class="header-2">
         Shortly about myself
       </div>
       <div class="desc">
         I like to solve business and computer problems
       </div>
-    </div>
+    </section>
 
-    <div class="box">
+    <section class="box">
       <div class="header-2">
         Programming Languages and capabilities
       </div>
@@ -43,9 +84,9 @@
         <div class="list">- Good experience in PostgreSQL database</div>
         <div class="list">- Good knowledge of languages: C++, PHP, SQL, Bash</div>
       </div>
-    </div>
+    </section>
 
-    <div class="box">
+    <section class="box">
       <div class="header-2">
         Code example
       </div>
@@ -63,62 +104,21 @@ function capital(capitals) {
 }
         </code>
       </pre>
-    </div>
+    </section>
 
-    <div class="box">
+    <section class="box">
       <div class="header-2">Education</div>
       <div class="desc">
         <div class="list">- Belarusian State University of Informatics and Radioelectronics Dates Attended: 2010 - 2011 Master’s Degree, Hardware, software and technical information security Grade</div>
         <div class="list">- Belarusian State University of Informatics and Radioelectronics Dates Attended: 2002 – 2007 Bachelor’s Degree, Electronic Systems</div>
       </div>
-    </div>
+    </section>
 
-    <div class="box">
+    <section class="box">
       <div class="header-2">English level</div>
       <div class="desc">Upper Intermediate</div>
-    </div>
+    </section>
 
-  </div>
+  </article>
 </body>
 </html>
-<style>
-  .main {
-    width: 600px;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-
-  .box {
-    padding: 10px 0;
-  }
-
-  .header-1 {
-    position: relative;
-    font-size: larger;
-    text-align: center;
-  }
-
-  .header-2 {
-    position: relative;
-    font-size: large;
-  }
-
-  .desc {
-    font-size: small;
-  }
-
-  .list {
-    padding-left: 5px;
-  }
-
-  pre {
-    margin: 0;
-  }
-
-  pre code {
-    display: block;
-    padding: 0 20px;
-    background-color: #eee;
-    border: 1px solid #999;
-  }
-</style>
