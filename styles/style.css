@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  color: #393b44;
+}
+
+body {
+  background-color: #f1f3f8;
+}
+
+.main {
+  width: 900px;
+  margin: 0 auto;
+  border: solid #8d93ab 1px;
+  border-radius: 1px;
+  background-color: #d6e0f0;
+}
+
+.nav {
+  width: 100%;
+  background-color: #8d93ab;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 900;
+  border-radius: 1px;
+}
+
+.nav__item {
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav__item:hover {
+  background-color: #d6e0f0;
+  border-radius: 1px;
+}
+
+.header {
+  padding-top: 30px;
+  position: relative;
+  font-size: larger;
+  text-align: center;
+}
+
+.box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.box__header {
+  position: relative;
+  font-size: large;
+}
+
+.box__center {
+  text-align: center;
+}
+
+.box__image {
+  padding-top: 30px;
+}
+
+.box__image > img {
+  border-radius: 5px;
+}
+
+.box__desc {
+  font-size: medium;
+  padding-top: 5px;
+}
+
+.list {
+  padding-left: 10px;
+  margin-left: 10px;
+  color: #334257;
+}
+
+.list__item {
+  font-size: medium;
+}
+
+.code {
+  padding-right: 30px;
+  font-size: small;
+}
+
+.code__item {
+  font-size: small;
+  display: block;
+  padding: 0 20px;
+  background-color: #f1f3f8;
+  border: 1px solid #334257;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 30px;
+  padding: 10px 30px;
+}
+
+.footer__logo-rrs {
+  background-image: url("../images/rs_school_js.svg");
+  background-size: 50px 80px;
+}
+
+.footer__logo-github {
+  background-image: url("../images/Octicons-mark-github.svg");
+}
