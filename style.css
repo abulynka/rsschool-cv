@@ -165,12 +165,12 @@ body {
 }
 
 .footer__logo-rrs {
-  background-image: url("../images/rs-school-js.svg");
+  background-image: url("images/rs-school-js.svg");
   background-size: 50px 80px;
 }
 
 .footer__logo-github {
-  background-image: url("../images/octicons-mark-github.svg");
+  background-image: url("images/octicons-mark-github.svg");
 }
 
 .footer__year {
