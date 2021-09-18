@@ -2,106 +2,163 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aliaksandr Bulynka CV</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <main class="main">
 
-      <header>
-        <nav class="nav">
-          <a class="nav__item" href="#contacts">Contacts</a>
-          <a class="nav__item" href="#about-myself">About myself</a>
-          <a class="nav__item" href="#capabilities">Capabilities</a>
-          <a class="nav__item" href="#foreign-languages">Foreign Languages</a>
-        </nav>
+      <header class="header">
+        <div class="header__container">
+          <div class="hamburger">
+            <div class="hamburger__title">CV</div>
+            <a class="hamburger__button">
+              <i class="fa fa-bars"></i>
+          </div>
+          <nav class="nav nav_hide">
+            <a class="nav__item" href="#contacts">Contacts</a>
+            <a class="nav__item" href="#about-myself">About myself</a>
+            <a class="nav__item" href="#capabilities">Capabilities</a>
+            <a class="nav__item" href="#foreign-languages">Foreign Languages</a>
+          </nav>
+          </a>
+        </div>
       </header>
 
-      <h1 class="header">CV</h1>
+      <article class="article">
+        <div class="article__container">
+          <h1 class="article__header">CV</h1>
 
-      <section class="box">
-        <h2 class="box__header box__center">Aliaksandr Bulynka</h2>
-        <figure class="box__image box__center">
-          <img src="images/cv-photo.jpeg" alt="Aliaksandr Bulynka">
-          <figcaption>Aliaksandr Bulynka</figcaption>
-        </figure>
-      </section>
+          <section class="box">
+            <h2 class="box__header box__center">Aliaksandr Bulynka</h2>
+            <figure class="box__image box__center">
+              <img class="box__image-img" src="images/cv-photo.jpeg" alt="Aliaksandr Bulynka">
+              <figcaption>Aliaksandr Bulynka</figcaption>
+            </figure>
+          </section>
 
-      <section class="box">
-        <h2 class="box__header" id="contacts">Contacts</h2>
-        <div class="box__desc">
-          Email: abulynka@gmail.com
-        </div>
-      </section>
+          <section class="box">
+            <h2 class="box__header" id="contacts">Contacts</h2>
+            <ul class="box__desc list">
+              <li class="list__item">
+                Email: abulynka@gmail.com
+              </li>
+            </ul>
+          </section>
 
-      <section class="box">
-        <h2 class="box__header" id="about-myself">Shortly about myself</h2>
-        <div class="box__desc">
-          I like to solve business and computer problems
-        </div>
-      </section>
+          <section class="box">
+            <h2 class="box__header" id="about-myself">Shortly about myself</h2>
+            <div class="box__desc">
+              I like to solve business and computer problems
+            </div>
+          </section>
 
-      <section class="box">
-        <h2 class="box__header" id="capabilities">Programming Languages and Capabilities</h2>
-        <div class="box__desc">
-          <ul class="list">
-            <li class="list__item">The Linux system software development and optimization</li>
-            <li class="list__item">Cryptography and data protection</li>
-            <li class="list__item">QT Framework</li>
-            <li class="list__item">Good experience in PostgreSQL database</li>
-            <li class="list__item">Good knowledge of languages: C++, PHP, SQL, Bash</li>
-          </ul>
-        </div>
-      </section>
+          <section class="box">
+            <h2 class="box__header" id="capabilities">Programming Languages and Capabilities</h2>
+              <ul class="box__desc list">
+                <li class="list__item">The Linux system software development and optimization</li>
+                <li class="list__item">Cryptography and data protection</li>
+                <li class="list__item">QT Framework</li>
+                <li class="list__item">Good experience in PostgreSQL database</li>
+                <li class="list__item">Good knowledge of languages: C++, PHP, SQL, Bash</li>
+              </ul>
+          </section>
 
-      <section class="box">
-        <h2 class="box__header">Code example</h2>
-        <pre class="code">
-          <code class="code__item">
-function capital(capitals) {
-  return capitals.map(
-    (a) => {
-      return 'The capital of '
-        + (a.hasOwnProperty('country') ? a['country'] : '')
-        + (a.hasOwnProperty('state') ? a['state'] : '')
-        + ' is ' + a['capital'];
+          <section class="box">
+            <h2 class="box__header">Code example</h2>
+            <pre class="code">
+              <code class="code__item javascript">
+    function capital(capitals) {
+      return capitals.map(
+        (a) => {
+          return 'The capital of '
+            + (a.hasOwnProperty('country') ? a['country'] : '')
+            + (a.hasOwnProperty('state') ? a['state'] : '')
+            + ' is ' + a['capital'];
+        }
+      );
     }
-  );
-}
-          </code>
-        </pre>
-      </section>
+              </code>
+            </pre>
+          </section>
 
-      <section class="box">
-        <h2 class="box__header">Education</h2>
-        <div class="box__desc">
-          <ul class="list">
-            <li class="list__item">Belarusian State University of Informatics and Radioelectronics Dates Attended: 2010 - 2011 Master’s Degree, Hardware, software and technical information security Grade</li>
-            <li class="list__item">Belarusian State University of Informatics and Radioelectronics Dates Attended: 2002 – 2007 Bachelor’s Degree, Electronic Systems</li>
-          </ul>
+          <section class="box projects">
+            <h2 class="box__header">Projects</h2>
+            <ul class="box__desc list">
+              <li class="list__item">
+                <a class="projects__ref" href="https://github.com/abulynka/express-rest-service" target="_blank">
+                  <img class="projects__img" src="images/project-1.png" alt="NestJS Service">
+                </a>
+                <br>
+                <span class="bold">Name:</span>
+                <br>
+                NestJS Service
+                <br>
+                <span class="bold">Description:</span>
+                <br>
+                This is a simple REST service.
+                <span class="bold">Used Technologies:</span>
+                <br>
+                NodeJS, PostgreSQL, Docker, NestJS
+              </li>
+              <li class="list__item">
+                <a class="projects__ref" href="https://rolling-scopes-school.github.io/abulynka-JSFEPRESCHOOL/js-clock/" target="_blank">
+                  <img class="projects__img" src="images/project-2.png" alt="JS Clock">
+                </a>
+                <br>
+                <span class="bold">Name:</span>
+                <br>
+                JS Clock
+                <br>
+                <span class="bold">Description:</span>
+                <br>
+                This is a simple JS Clock.
+                <span class="bold">Used Technologies:</span>
+                <br>
+                JavaScript, CSS
+              </li>
+            </ul>
+          </section>
+
+          <section class="box">
+            <h2 class="box__header">Education</h2>
+            <ul class="box__desc list">
+              <li class="list__item">Belarusian State University of Informatics and Radioelectronics Dates Attended: 2010 - 2011 Master’s Degree, Hardware, software and technical information security Grade</li>
+              <li class="list__item">Belarusian State University of Informatics and Radioelectronics Dates Attended: 2002 – 2007 Bachelor’s Degree, Electronic Systems</li>
+            </ul>
+          </section>
+
+          <section class="box">
+            <h2 class="box__header" id="foreign-languages">Foreign Languages</h2>
+            <ul class="list">
+              <li class="list__item">English</li>
+              <li class="list__item">French</li>
+            </ul>
+          </section>
+
+          <section class="box">
+            <h2 class="box__header">English Level</h2>
+            <div class="box__desc">Upper Intermediate</div>
+          </section>
         </div>
-      </section>
-
-      <section class="box">
-        <h2 class="box__header" id="foreign-languages">Foreign Languages</h2>
-        <ul class="list">
-          <li class="list__item">English</li>
-          <li class="list__item">French</li>
-        </ul>
-      </section>
-
-      <section class="box">
-        <h2 class="box__header">English Level</h2>
-        <div class="box__desc">Upper Intermediate</div>
-      </section>
+      </article>
 
       <footer class="footer nav">
-        <a class="footer__logo-rrs footer__logo nav__item" href="https://rs.school/js/"></a>
-        2021
-        <a class="footer__logo-github footer__logo nav__item" href="https://github.com/abulynka/"></a>
+        <div class="footer__container">
+          <a class="footer__logo-rrs footer__logo nav__item" href="https://rs.school/js/"></a>
+          <div class="footer__year">2021</div>
+          <a class="footer__logo-github footer__logo nav__item" href="https://github.com/abulynka/"></a>
+        </div>
       </footer>
 
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
