@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "htmlhint": "^0.15.1",
+    "htmlhint": "^0.15.2",
     "stylelint-config-htmlacademy": "^0.1.10"
-  }
+  },
+  "dependencies": {}
 }
