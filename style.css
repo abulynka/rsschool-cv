@@ -59,11 +59,6 @@ body {
   border-radius: 1px;
 }
 
-.nav_hide {
-  display: none;
-  opacity: 0;
-}
-
 .nav__item {
   text-decoration: none;
   padding: 10px;
@@ -200,6 +195,11 @@ body {
   .box__image-img {
     max-width: 700px;
   }
+
+  .nav_hide {
+    display: none;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -210,6 +210,11 @@ body {
   .box__image-img {
     max-width: 300px;
   }
+
+  .nav_hide {
+    display: none;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 420px) and (min-width: 320px) {
@@ -219,5 +224,10 @@ body {
 
   .box__image-img {
     max-width: 200px;
+  }
+
+  .nav_hide {
+    display: none;
+    opacity: 0;
   }
 }
