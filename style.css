@@ -1,3 +1,8 @@
+:root {
+  --max-width: 900px;
+  --min-width: 300px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,26 +11,57 @@
   color: #393b44;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f1f3f8;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .main {
-  width: 900px;
-  margin: 0 auto;
   border: solid #8d93ab 1px;
   border-radius: 1px;
-  background-color: #d6e0f0;
+}
+
+.header {
+  width: 100%;
+  background-color: #8d93ab;
+}
+
+.header__container {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  margin: 0 auto;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: 900;
+}
+
+.hamburger__button:hover {
+  cursor: pointer;
 }
 
 .nav {
+  display: flex;
   width: 100%;
   background-color: #8d93ab;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   font-weight: 900;
   border-radius: 1px;
+}
+
+.nav_hide {
+  display: none;
+  opacity: 0;
 }
 
 .nav__item {
@@ -39,7 +75,17 @@ body {
   border-radius: 1px;
 }
 
-.header {
+.article {
+  background-color: #f1f3f8;
+}
+
+.article__container {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  margin: 0 auto;
+}
+
+.article__header {
   padding-top: 30px;
   position: relative;
   font-size: larger;
@@ -74,6 +120,11 @@ body {
   padding-top: 5px;
 }
 
+.projects__img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
 .list {
   padding-left: 10px;
   margin-left: 10px;
@@ -90,15 +141,20 @@ body {
 }
 
 .code__item {
-  font-size: small;
-  display: block;
-  padding: 0 20px;
   background-color: #f1f3f8;
   border: 1px solid #334257;
   border-radius: 5px;
 }
 
 .footer {
+  width: 100%;
+  background-color: #8d93ab;
+}
+
+.footer__container {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,4 +176,48 @@ body {
 
 .footer__logo-github {
   background-image: url("../images/Octicons-mark-github.svg");
+}
+
+.footer__year {
+  padding: 10px 30px;
+}
+
+@media (min-width: calc(1024px + 1px)) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .box__image-img {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .box__image-img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 420px) and (min-width: 320px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .box__image-img {
+    max-width: 200px;
+  }
 }
