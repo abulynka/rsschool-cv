@@ -215,6 +215,12 @@ body {
     display: none;
     opacity: 0;
   }
+
+  .code__item,
+  .code__item > span,
+  .code__item > span > span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 420px) and (min-width: 320px) {
@@ -229,5 +235,11 @@ body {
   .nav_hide {
     display: none;
     opacity: 0;
+  }
+
+  .code__item,
+  .code__item > span,
+  .code__item > span > span {
+    font-size: 10px;
   }
 }
