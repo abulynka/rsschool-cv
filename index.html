@@ -74,16 +74,20 @@
             <h2 class="box__header">Code example</h2>
             <pre class="code">
               <code class="code__item javascript">
-    function capital(capitals) {
-      return capitals.map(
-        (a) => {
-          return 'The capital of '
-            + (a.hasOwnProperty('country') ? a['country'] : '')
-            + (a.hasOwnProperty('state') ? a['state'] : '')
-            + ' is ' + a['capital'];
-        }
-      );
+function capital(capitals) {
+  return capitals.map(
+    (a) => {
+      return 'The capital of '
+        + (a.hasOwnProperty('country')
+          ? a['country']
+          : '')
+        + (a.hasOwnProperty('state')
+          ? a['state']
+          : '')
+        + ' is ' + a['capital'];
     }
+  );
+}
               </code>
             </pre>
           </section>
